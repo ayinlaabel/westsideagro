@@ -15,6 +15,7 @@ body {
     width: 100%;
     font-family: 'Roboto', sans-serif !important;
     color: #fff !important;
+    line-height: 1.5;
 }
 
 h1,
@@ -42,4 +43,55 @@ h3 {
     transform: translate(-50%, -50%);
     text-align: center;
     margin: auto;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media screen and (max-width: 576px) { 
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (max-width: 768px) {
+    h1,
+    h2,
+    h3 {
+        padding: 0;
+        margin: 0;
+
+        &.lg-heading {
+            font-size: 4rem;
+        }
+
+        &.sm-heading {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+    }
+
+    .comingSoon {
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-20%, -50%);
+        text-align: center;
+        margin: auto;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+
 }

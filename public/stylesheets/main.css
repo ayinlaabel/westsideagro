@@ -10,7 +10,8 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif !important;
-  color: #fff !important; }
+  color: #fff !important;
+  line-height: 1.5; }
 
 h1,
 h2,
@@ -30,3 +31,27 @@ h3 {
   transform: translate(-50%, -50%);
   text-align: center;
   margin: auto; }
+
+@media screen and (max-width: 768px) {
+  h1,
+  h2,
+  h3 {
+    padding: 0;
+    margin: 0; }
+    h1.lg-heading,
+    h2.lg-heading,
+    h3.lg-heading {
+      font-size: 4rem; }
+    h1.sm-heading,
+    h2.sm-heading,
+    h3.sm-heading {
+      font-size: 1.2rem;
+      font-weight: 600; }
+  .comingSoon {
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-20%, -50%);
+    text-align: center;
+    margin: auto; } }
