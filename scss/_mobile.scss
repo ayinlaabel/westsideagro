@@ -2,24 +2,87 @@
 
 // X-Large devices (large desktops, 1200px and up)
 @include mediaXl {
+    .sr {
 
+
+        &-content {
+            padding: 6.3em 3.6em 3.6em 4.8em;
+
+            .sr-item-header {
+                padding-left: 12rem;
+
+                .sr-item-title {
+                    font-size: 2em;
+                }
+            }
+            .sr-item-title {
+                font-size: 2em;
+            }
+        }
+    }
+
+    &-icon-number {
+        left: 4.5rem;
+        font-size: 4.5rem;
+        margin: 0;
+        top: 6.25rem;
+    }
 }
 
 // Large devices (desktops, 992px and up)
 @include mediaLg {
     .jumbotron {
+        padding: 10rem 1rem !important;
+
         h1.lg-heading {
-            font-size: 4rem;
+            font-size: 3rem;
         }
         h3.sm-heading {
             font-size: 1.5rem
         }
+    }
+
+    .sr {
+
+        &-container {
+            position: relative;
+            display: grid;
+            grid-template-areas: 
+            'sr-01'
+            'sr-02'
+            'sr-03';
+            grid-template-columns: 1fr;
+            padding: 0;
+            margin: 0;
+        }
+
+        &-01{
+            grid-area: sr-01;
+            margin: 0 10rem;
+        }
+    
+        &-02{
+            grid-area: sr-02;
+            background: lighten($primary-color, 5);
+            .sr-02-responsive {
+                margin: 0 10rem;
+                position: relative;
+            }
+        }
+    
+        &-03{
+            grid-area: sr-03;
+            margin: 0 10rem;
+        }
+
+        
     }
 }
 
 // Medium devices (tablets, 768px and up)
 @include mediaMd {
     .jumbotron {
+        padding: 10rem 1rem;
         h1.lg-heading {
             font-size: 2rem;
         }
@@ -27,9 +90,31 @@
             font-size: 1rem
         }
     }
+    .sr {
+
+        &-container {
+            position: relative;
+            display: grid;
+            grid-template-areas: 
+            'sr-01'
+            'sr-02'
+            'sr-03';
+            grid-template-columns: 1fr;
+            padding: 0;
+            margin: 0;
+        }
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
 @include mediaSm {
-
+    .jumbotron {
+        padding: 10rem 0rem;
+        h1.lg-heading {
+            font-size: 2rem;
+        }
+        h3.sm-heading {
+            font-size: 1rem
+        }
+    }
 }

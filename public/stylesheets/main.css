@@ -11,9 +11,9 @@ body {
   position: relative;
   background: linear-gradient(rgba(68, 68, 68, 0.7), rgba(68, 68, 68, 0.7)), url(/images/oil-palm-plantation.jpg);
   background-attachment: fixed;
-  height: 50vh;
+  height: 100%;
   width: 100%;
-  padding: 2rem;
+  padding: 10rem;
   color: #fff;
   align-items: center;
   margin: auto;
@@ -33,7 +33,7 @@ body {
     .jumbotron h1.lg-heading,
     .jumbotron h2.lg-heading,
     .jumbotron h3.lg-heading {
-      font-size: 6rem; }
+      font-size: 4.8rem; }
     .jumbotron h1.sm-heading,
     .jumbotron h2.sm-heading,
     .jumbotron h3.sm-heading {
@@ -63,18 +63,62 @@ body {
       padding: 0.2rem; }
 
 .sr {
+  background: #057023;
   margin: 0;
   padding: 0; }
   .sr-container {
-    display: flex;
+    position: relative;
+    display: grid;
+    grid-template-areas: 'sr-01 sr-02 sr-03';
+    grid-template-columns: repeat(3, 1fr);
     padding: 0;
     margin: 0; }
-    .sr-container > div {
-      width: 33.3333%; }
-  .sr-offer {
-    flex-grow: 1; }
-  .sr-icon {
-    font-size: 2rem; }
+  .sr-item {
+    position: relative; }
+  .sr-01 {
+    grid-area: sr-01; }
+  .sr-02 {
+    grid-area: sr-02;
+    background: #06882b; }
+  .sr-03 {
+    grid-area: sr-03; }
+  .sr-content {
+    padding: 6em 3.6em 3.6em 4.8em; }
+    .sr-content .sr-item-header {
+      padding-left: 2rem; }
+      .sr-content .sr-item-header .sr-item-title {
+        position: relative;
+        color: #fff; }
+    .sr-content .sr-item-content {
+      margin-top: 2.4em;
+      min-height: 9.5em;
+      color: #f2f2f2; }
+    .sr-content .sm-heading {
+      padding-left: 10rem; }
+    .sr-content .sr-header {
+      position: absolute;
+      top: 20px;
+      transform: translate(20px); }
+  .sr-icon-number {
+    position: absolute;
+    font-size: 5.4rem;
+    font-weight: 400;
+    line-height: 1em;
+    top: 4.75rem;
+    left: 6.2rem;
+    color: #eecd15; }
+    .sr-icon-number:after {
+      content: '';
+      position: absolute;
+      right: -1.6rem;
+      top: 2.65rem;
+      width: 4.429rem;
+      height: 2px;
+      transform: translateX(100%); }
+    .sr-icon-number::after {
+      top: 2.35rem;
+      width: 2rem;
+      background: #eece1a; }
 
 .mytext-primary {
   color: #057023; }
@@ -82,14 +126,67 @@ body {
 .mytext-secondary {
   color: #eece1a; }
 
+@media screen and (min-width: 1200px) {
+  .sr-content {
+    padding: 6.3em 3.6em 3.6em 4.8em; }
+    .sr-content .sr-item-header {
+      padding-left: 12rem; }
+      .sr-content .sr-item-header .sr-item-title {
+        font-size: 2em; }
+    .sr-content .sr-item-title {
+      font-size: 2em; }
+  -icon-number {
+    left: 4.5rem;
+    font-size: 4.5rem;
+    margin: 0;
+    top: 6.25rem; } }
+
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  .jumbotron h1.lg-heading {
-    font-size: 4rem; }
-  .jumbotron h3.sm-heading {
-    font-size: 1.5rem; } }
+  .jumbotron {
+    padding: 10rem 1rem !important; }
+    .jumbotron h1.lg-heading {
+      font-size: 3rem; }
+    .jumbotron h3.sm-heading {
+      font-size: 1.5rem; }
+  .sr-container {
+    position: relative;
+    display: grid;
+    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0; }
+  .sr-01 {
+    grid-area: sr-01;
+    margin: 0 10rem; }
+  .sr-02 {
+    grid-area: sr-02;
+    background: #06882b; }
+    .sr-02 .sr-02-responsive {
+      margin: 0 10rem;
+      position: relative; }
+  .sr-03 {
+    grid-area: sr-03;
+    margin: 0 10rem; } }
 
 @media screen and (max-width: 768px) {
-  .jumbotron h1.lg-heading {
-    font-size: 2rem; }
-  .jumbotron h3.sm-heading {
-    font-size: 1rem; } }
+  .jumbotron {
+    padding: 10rem 1rem; }
+    .jumbotron h1.lg-heading {
+      font-size: 2rem; }
+    .jumbotron h3.sm-heading {
+      font-size: 1rem; }
+  .sr-container {
+    position: relative;
+    display: grid;
+    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0; } }
+
+@media screen and (max-width: 576px) {
+  .jumbotron {
+    padding: 10rem 0rem; }
+    .jumbotron h1.lg-heading {
+      font-size: 2rem; }
+    .jumbotron h3.sm-heading {
+      font-size: 1rem; } }
