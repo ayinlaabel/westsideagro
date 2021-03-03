@@ -2,56 +2,94 @@
   box-sizing: border-box; }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(/images/pp.jpeg);
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
   height: 100%;
   width: 100%;
-  font-family: 'Roboto', sans-serif !important;
-  color: #fff !important;
-  line-height: 1.5; }
-
-h1,
-h2,
-h3 {
   padding: 0;
   margin: 0; }
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading {
-    font-size: 6rem; }
 
-.comingSoon {
+.jumbotron {
+  position: relative;
+  background: linear-gradient(rgba(68, 68, 68, 0.7), rgba(68, 68, 68, 0.7)), url(/images/oil-palm-plantation.jpg);
+  background-attachment: fixed;
+  height: 50vh;
+  width: 100%;
+  padding: 2rem;
+  color: #fff;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  margin: auto; }
+  margin: auto;
+  text-align: center; }
+  .jumbotron-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto; }
+  .jumbotron h1,
+  .jumbotron h2,
+  .jumbotron h3 {
+    font-weight: 300;
+    margin: auto; }
+    .jumbotron h1.lg-heading,
+    .jumbotron h2.lg-heading,
+    .jumbotron h3.lg-heading {
+      font-size: 6rem; }
+    .jumbotron h1.sm-heading,
+    .jumbotron h2.sm-heading,
+    .jumbotron h3.sm-heading {
+      font-size: 2rem;
+      font-weight: 600; }
 
-@media screen and (max-width: 768px) {
-  h1,
-  h2,
-  h3 {
+.about {
+  margin: 0;
+  padding: 1rem;
+  background: #f2f2f2; }
+  .about-container {
+    display: flex; }
+    .about-container > div {
+      height: 100%;
+      width: 200px;
+      padding: 0 0.5rem; }
+  .about-bg {
+    width: 100%;
+    flex-grow: 2; }
+    .about-bg img {
+      width: 100%; }
+  .about-content {
+    flex-grow: 4; }
+    .about-content h3.sm-heading {
+      background: #057023;
+      display: inline-block;
+      padding: 0.2rem; }
+
+.sr {
+  margin: 0;
+  padding: 0; }
+  .sr-container {
+    display: flex;
     padding: 0;
     margin: 0; }
-    h1.lg-heading,
-    h2.lg-heading,
-    h3.lg-heading {
-      font-size: 4rem; }
-    h1.sm-heading,
-    h2.sm-heading,
-    h3.sm-heading {
-      font-size: 1.2rem;
-      font-weight: 600; }
-  .comingSoon {
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-20%, -50%);
-    text-align: center;
-    margin: auto; } }
+    .sr-container > div {
+      width: 33.3333%; }
+  .sr-offer {
+    flex-grow: 1; }
+  .sr-icon {
+    font-size: 2rem; }
+
+.mytext-primary {
+  color: #057023; }
+
+.mytext-secondary {
+  color: #eece1a; }
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .jumbotron h1.lg-heading {
+    font-size: 4rem; }
+  .jumbotron h3.sm-heading {
+    font-size: 1.5rem; } }
+
+@media screen and (max-width: 768px) {
+  .jumbotron h1.lg-heading {
+    font-size: 2rem; }
+  .jumbotron h3.sm-heading {
+    font-size: 1rem; } }

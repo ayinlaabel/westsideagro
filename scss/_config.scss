@@ -1,0 +1,37 @@
+$primary-color: #057023;
+$secondary-color: #eece1a;
+$background-color: #444;
+$background-opacity: 0.7;
+$about-image: url(/images/oil-palm-plantation.jpg);
+
+
+
+//Media Query for Mobile responsive
+
+// Small devices (landscape phones, 576px and up)
+@mixin mediaSm {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+        @content;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin mediaXl {
+    @media screen and (min-width: 993px) and (max-width: 1200px) {
+        @content;
+    }
+}

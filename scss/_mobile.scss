@@ -1,0 +1,35 @@
+
+
+// X-Large devices (large desktops, 1200px and up)
+@include mediaXl {
+
+}
+
+// Large devices (desktops, 992px and up)
+@include mediaLg {
+    .jumbotron {
+        h1.lg-heading {
+            font-size: 4rem;
+        }
+        h3.sm-heading {
+            font-size: 1.5rem
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@include mediaMd {
+    .jumbotron {
+        h1.lg-heading {
+            font-size: 2rem;
+        }
+        h3.sm-heading {
+            font-size: 1rem
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@include mediaSm {
+
+}

@@ -1,97 +1,116 @@
-$primary-color: #444;
+@import  'config';
+
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.5)), 
-                url(/images/pp.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Roboto', sans-serif !important;
-    color: #fff !important;
-    line-height: 1.5;
-}
-
-h1,
-h2,
-h3 {
     padding: 0;
     margin: 0;
-
-    &.lg-heading {
-        font-size: 6rem;
-    }
-
-    .sm-heading {
-
-    }
-
 }
 
-
-.comingSoon {
+.jumbotron {
+    position: relative;
+    background: linear-gradient(rgba($background-color, $background-opacity), rgba($background-color, $background-opacity)), url(/images/oil-palm-plantation.jpg);
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    padding: 2rem;
+    color: #fff;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
     margin: auto;
-}
+    text-align: center;
 
+    &-content {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+    }
 
-// Small devices (landscape phones, 576px and up)
-@media screen and (max-width: 576px) { 
-
-}
-
-// Medium devices (tablets, 768px and up)
-@media screen and (max-width: 768px) {
     h1,
     h2,
     h3 {
+        font-weight: 300;
+        margin: auto;
+
+        &.lg-heading{
+            font-size: 6rem;
+        }
+        &.sm-heading {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.about {
+    margin: 0;
+    padding: 1rem;
+    background: #f2f2f2;
+
+    &-container{
+        & > div {
+            height: 100%;
+            width: 200px;
+            padding: 0 0.5rem;
+        }
+        display: flex;
+    }
+    &-bg {
+        width: 100%;
+        flex-grow: 2;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    &-content {
+        flex-grow: 4;
+
+        h3.sm-heading {
+            background: $primary-color;
+            display: inline-block;
+            padding: 0.2rem;
+        }
+    }    
+}
+
+.sr {
+    margin: 0;
+    padding: 0;
+
+    &-container {
+        display: flex;
         padding: 0;
         margin: 0;
 
-        &.lg-heading {
-            font-size: 4rem;
+        & > div {
+            width: 33.3333%;
         }
-
-        &.sm-heading {
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-
     }
 
-    .comingSoon {
-        align-items: center;
-        position: absolute;
-        top: 50%;
-        left: 30%;
-        transform: translate(-20%, -50%);
-        text-align: center;
-        margin: auto;
+    &-offer{
+        flex-grow: 1;
+    }
+
+    &-icon {
+        font-size: 2rem;
     }
 }
-
-// Large devices (desktops, 992px and up)
-@media screen and (min-width: 768px) and (max-width: 992px){
-
+.mytext-primary {
+    color: $primary-color;
 }
 
-// X-Large devices (large desktops, 1200px and up)
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-
+.mytext-secondary {
+    color: $secondary-color;
 }
 
-// XX-Large devices (larger desktops, 1400px and up)
-@media screen and (min-width: 1201px) and (max-width: 1400px) {
 
-}
+@import 'mobile';
