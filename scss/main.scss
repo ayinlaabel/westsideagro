@@ -115,7 +115,7 @@ body {
     }
 
     &-content {
-        padding: 6em 3.6em 3.6em 4.8em;
+        padding: 8.7em 8.4em 8em 8.4em;
 
         .sr-item-header {
             padding-left: 2rem;
@@ -132,10 +132,6 @@ body {
             color: darken(#fff, 5);
         }
 
-        .sm-heading {
-            padding-left: 10rem;
-        }
-
         .sr-header {
             position: absolute;
             top: 20px;
@@ -149,7 +145,7 @@ body {
         font-weight: 400;
         line-height: 1em;
         top: 4.75rem;
-        left: 6.2rem;
+        left: 4.2rem;
         color: darken($secondary-color, 1);
 
         &:after{
@@ -163,9 +159,82 @@ body {
         }
 
         &::after {
-            top: 2.35rem;
+            top: 3rem;
             width: 2rem;
             background: $secondary-color;
+        }
+    }
+}
+
+.contact {
+    display: grid;
+    grid-template-areas: 
+    'contact-us contact-map';
+    grid-template-columns: repeat(2, 1fr);
+
+    .contact-us {
+        grid-area: contact-us;
+    }
+
+    .contact-map {
+        grid-area: contact-map;
+    }
+
+    .wp-wrap {
+        display: grid;
+        grid-template-areas: 
+        'vc-empty-box-1 contact-us-content contact-us-content';
+        grid-template-columns: repeat(3, 1fr);
+
+        .vc-empty-box-1{
+            grid-area: vc-empty-box-1;
+        }
+
+        .contact-us-content{
+            grid-area: contact-us-content;
+
+            &-wrapper {
+                padding-left: 0!important;
+            }
+        }
+
+        .vc-empty-box-2{
+            grid-area: vc-empty-box-2;
+        }
+    }
+
+    .contact-title {
+        position: relative;
+        width: 350px;
+
+
+        .contact-item-subtitle {
+            color: $primary-color;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        .contact-item-title {
+            line-height: 0.92;
+            font-weight: 300;
+        }
+    }
+    
+    &-margin {
+        color: $primary-color;
+        padding-right: 1em;
+        min-width: 89px;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    a {
+        text-decoration: none;
+        color: $primary-color;
+
+        &:hover {
+            color: lighten($primary-color, 6);
         }
     }
 }
@@ -176,6 +245,46 @@ body {
 .mytext-secondary {
     color: $secondary-color;
 }
+
+.height-large {
+    height: 6.6667rem!important;
+}
+
+.height-medium {
+    height: 3rem !important;
+}
+
+.vc-custom {
+    margin-top: 0.4rem !important;
+}
+
+.vc-custom-ad {
+    border-left-width: 2px !important;
+    padding-left: 3em !important;
+    border-left-color: $primary-color !important;
+    border-left-style: solid !important
+}
+
+.vc-custom-element {
+    margin-bottom: 0 !important;
+}
+
+.vc-google-map {
+    position: relative;
+    padding-top: 0.1px;
+}
+
+iframe, video, embed {
+    max-width: 100%;
+    min-height: 100px;
+    vertical-align: top;
+}
+
+.vc-google-map > iframe {
+    width: 100%;
+    height: 100%;
+}
+
 
 
 @import 'mobile';

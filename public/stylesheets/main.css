@@ -83,7 +83,7 @@ body {
   .sr-03 {
     grid-area: sr-03; }
   .sr-content {
-    padding: 6em 3.6em 3.6em 4.8em; }
+    padding: 8.7em 8.4em 8em 8.4em; }
     .sr-content .sr-item-header {
       padding-left: 2rem; }
       .sr-content .sr-item-header .sr-item-title {
@@ -93,8 +93,6 @@ body {
       margin-top: 2.4em;
       min-height: 9.5em;
       color: #f2f2f2; }
-    .sr-content .sm-heading {
-      padding-left: 10rem; }
     .sr-content .sr-header {
       position: absolute;
       top: 20px;
@@ -105,7 +103,7 @@ body {
     font-weight: 400;
     line-height: 1em;
     top: 4.75rem;
-    left: 6.2rem;
+    left: 4.2rem;
     color: #eecd15; }
     .sr-icon-number:after {
       content: '';
@@ -116,9 +114,52 @@ body {
       height: 2px;
       transform: translateX(100%); }
     .sr-icon-number::after {
-      top: 2.35rem;
+      top: 3rem;
       width: 2rem;
       background: #eece1a; }
+
+.contact {
+  display: grid;
+  grid-template-areas: 'contact-us contact-map';
+  grid-template-columns: repeat(2, 1fr); }
+  .contact .contact-us {
+    grid-area: contact-us; }
+  .contact .contact-map {
+    grid-area: contact-map; }
+  .contact .wp-wrap {
+    display: grid;
+    grid-template-areas: 'vc-empty-box-1 contact-us-content contact-us-content';
+    grid-template-columns: repeat(3, 1fr); }
+    .contact .wp-wrap .vc-empty-box-1 {
+      grid-area: vc-empty-box-1; }
+    .contact .wp-wrap .contact-us-content {
+      grid-area: contact-us-content; }
+      .contact .wp-wrap .contact-us-content-wrapper {
+        padding-left: 0 !important; }
+    .contact .wp-wrap .vc-empty-box-2 {
+      grid-area: vc-empty-box-2; }
+  .contact .contact-title {
+    position: relative;
+    width: 350px; }
+    .contact .contact-title .contact-item-subtitle {
+      color: #057023;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      text-align: left; }
+    .contact .contact-title .contact-item-title {
+      line-height: 0.92;
+      font-weight: 300; }
+  .contact-margin {
+    color: #057023;
+    padding-right: 1em;
+    min-width: 89px;
+    box-sizing: border-box;
+    display: inline-block; }
+  .contact a {
+    text-decoration: none;
+    color: #057023; }
+    .contact a:hover {
+      color: #068d2c; }
 
 .mytext-primary {
   color: #057023; }
@@ -126,11 +167,42 @@ body {
 .mytext-secondary {
   color: #eece1a; }
 
+.height-large {
+  height: 6.6667rem !important; }
+
+.height-medium {
+  height: 3rem !important; }
+
+.vc-custom {
+  margin-top: 0.4rem !important; }
+
+.vc-custom-ad {
+  border-left-width: 2px !important;
+  padding-left: 3em !important;
+  border-left-color: #057023 !important;
+  border-left-style: solid !important; }
+
+.vc-custom-element {
+  margin-bottom: 0 !important; }
+
+.vc-google-map {
+  position: relative;
+  padding-top: 0.1px; }
+
+iframe, video, embed {
+  max-width: 100%;
+  min-height: 100px;
+  vertical-align: top; }
+
+.vc-google-map > iframe {
+  width: 100%;
+  height: 100%; }
+
 @media screen and (min-width: 1200px) {
   .sr-content {
-    padding: 6.3em 3.6em 3.6em 4.8em; }
+    padding: 6.3em 2em 3.6em 4.8em; }
     .sr-content .sr-item-header {
-      padding-left: 12rem; }
+      padding-left: 10rem; }
       .sr-content .sr-item-header .sr-item-title {
         font-size: 2em; }
     .sr-content .sr-item-title {
@@ -139,7 +211,14 @@ body {
     left: 4.5rem;
     font-size: 4.5rem;
     margin: 0;
-    top: 6.25rem; } }
+    top: 6.25rem; }
+    -icon-number::after {
+      top: 2.35rem;
+      width: 2.829rem; }
+  .contact .contact-item-title {
+    font-size: 3.8rem; }
+  .contact-margin {
+    min-width: 65px; } }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .jumbotron {
@@ -151,7 +230,7 @@ body {
   .sr-container {
     position: relative;
     display: grid;
-    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
+    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
     grid-template-columns: 1fr;
     padding: 0;
     margin: 0; }
@@ -178,7 +257,7 @@ body {
   .sr-container {
     position: relative;
     display: grid;
-    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
+    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
     grid-template-columns: 1fr;
     padding: 0;
     margin: 0; } }
