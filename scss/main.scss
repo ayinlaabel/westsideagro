@@ -1,4 +1,5 @@
 @import  'config';
+@import 'btn';
 
 
 * {
@@ -72,7 +73,12 @@ body {
     }
 
     &-content {
+        margin: auto 4rem;
         flex-grow: 4;
+
+        p {
+            font-size: 1.3rem;
+        }
 
         h3.sm-heading {
             background: $primary-color;
@@ -91,8 +97,8 @@ body {
         position: relative;
         display: grid;
         grid-template-areas: 
-        'sr-01 sr-02 sr-03';
-        grid-template-columns: repeat(3, 1fr);
+        'sr-01 sr-02';
+        grid-template-columns: repeat(2, 1fr);
         padding: 0;
         margin: 0;
     }
