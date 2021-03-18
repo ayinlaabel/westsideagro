@@ -383,26 +383,6 @@
         }
     }
 
-    .sr {
-
-        &-01,
-        &-02 {
-            width: 100vh;
-        }
-
-        &-container {
-            position: relative;
-            display: grid;
-            grid-template-areas: 
-            'sr-01'
-            'sr-02'
-            'sr-03';
-            grid-template-columns: 1fr;
-            padding: 0;
-            margin: 0;
-        }
-    }
-
     .contact-title {
         position: relative;
         width: 320px !important;
