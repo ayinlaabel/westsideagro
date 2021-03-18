@@ -93,6 +93,88 @@
 
         
     }
+
+    .contact {
+        display: grid;
+        grid-template-areas: 
+        'contact-us' 
+        'contact-map';
+        grid-template-columns: 1fr;
+
+        .contact-us,
+        .contact-map {
+            margin: .9rem;
+        }
+    
+        .contact-us {
+            grid-area: contact-us;
+            width: 100%;
+            margin: 7rem;
+        }
+    
+        .contact-map {
+            grid-area: contact-map;
+            width: 100%;
+        }
+    
+        .wp-wrap {
+            display: grid;
+            grid-template-areas: 
+            'contact-us-content contact-us-content';
+            grid-template-columns: repeat(2, 1fr);
+    
+            .vc-empty-box-1{
+                grid-area: vc-empty-box-1;
+            }
+    
+            .contact-us-content{
+                grid-area: contact-us-content;
+    
+                &-wrapper {
+                    padding-left: 0!important;
+                }
+            }
+    
+            .vc-empty-box-2{
+                grid-area: vc-empty-box-2;
+            }
+        }
+    
+        .contact-title {
+            position: relative;
+            width: 350px;
+    
+    
+            .contact-item-subtitle {
+                color: $primary-color;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                text-align: left;
+            }
+    
+            .contact-item-title {
+                line-height: 0.92;
+                font-weight: 300;
+            }
+        }
+        
+        &-margin {
+            color: $primary-color;
+            padding-right: 1em;
+            min-width: 89px;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+    
+        a {
+            text-decoration: none;
+            color: $primary-color;
+    
+            &:hover {
+                color: lighten($primary-color, 6);
+            }
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -118,6 +200,131 @@
             grid-template-columns: 1fr;
             padding: 0;
             margin: 0;
+        }
+    }
+
+    .about {
+        margin: 0 0 1rem 0;
+        padding: 1rem;
+        background: #f2f2f2;
+    
+        &-container{
+            & > div {
+                margin: 1rem auto;
+                height: 100%;
+                width: 100%;
+            }
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+        &-bg {
+            width: 100%;
+            margin: auto;
+            
+            img {
+                margin: auto;
+                width: 100%;
+            }
+        }
+    
+        &-content {
+            text-align: center;
+            margin: 0;
+            p {
+                font-size: 1rem;
+            }
+    
+            h3.sm-heading {
+                text-transform: uppercase;
+                font-weight: 900;
+                color: $primary-color;
+                background: none;
+                display: inline-block;
+                padding: 0.2rem;
+            }
+        }    
+    }
+
+    .contact {
+        display: grid;
+        grid-template-areas: 
+        'contact-us' 
+        'contact-map';
+        grid-template-columns: 1fr;
+
+        .contact-us,
+        .contact-map {
+            margin: .9rem;
+        }
+    
+        .contact-us {
+            grid-area: contact-us;
+            width: 100%;
+            margin-left: 4rem;
+        }
+    
+        .contact-map {
+            grid-area: contact-map;
+            width: 100%;
+        }
+    
+        .wp-wrap {
+            display: grid;
+            grid-template-areas: 
+            'contact-us-content contact-us-content';
+            grid-template-columns: repeat(2, 1fr);
+    
+            .vc-empty-box-1{
+                grid-area: vc-empty-box-1;
+            }
+    
+            .contact-us-content{
+                grid-area: contact-us-content;
+    
+                &-wrapper {
+                    padding-left: 0!important;
+                }
+            }
+    
+            .vc-empty-box-2{
+                grid-area: vc-empty-box-2;
+            }
+        }
+    
+        .contact-title {
+            position: relative;
+            width: 350px;
+    
+    
+            .contact-item-subtitle {
+                color: $primary-color;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                text-align: left;
+            }
+    
+            .contact-item-title {
+                line-height: 0.92;
+                font-weight: 300;
+            }
+        }
+        
+        &-margin {
+            color: $primary-color;
+            padding-right: 1em;
+            min-width: 89px;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+    
+        a {
+            text-decoration: none;
+            color: $primary-color;
+    
+            &:hover {
+                color: lighten($primary-color, 6);
+            }
         }
     }
 }

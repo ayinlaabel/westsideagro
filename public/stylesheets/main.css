@@ -160,7 +160,7 @@ header {
     margin: auto 4rem;
     flex-grow: 4; }
     .about-content p {
-      font-size: 1.3rem; }
+      font-size: 1.1rem; }
     .about-content h3.sm-heading {
       background: #057023;
       display: inline-block;
@@ -334,7 +334,7 @@ iframe, video, embed {
   .sr-container {
     position: relative;
     display: grid;
-    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
+    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
     grid-template-columns: 1fr;
     padding: 0;
     margin: 0; }
@@ -349,7 +349,55 @@ iframe, video, embed {
       position: relative; }
   .sr-03 {
     grid-area: sr-03;
-    margin: 0 10rem; } }
+    margin: 0 10rem; }
+  .contact {
+    display: grid;
+    grid-template-areas: 'contact-us'  'contact-map';
+    grid-template-columns: 1fr; }
+    .contact .contact-us,
+    .contact .contact-map {
+      margin: .9rem; }
+    .contact .contact-us {
+      grid-area: contact-us;
+      width: 100%;
+      margin: 7rem; }
+    .contact .contact-map {
+      grid-area: contact-map;
+      width: 100%; }
+    .contact .wp-wrap {
+      display: grid;
+      grid-template-areas: 'contact-us-content contact-us-content';
+      grid-template-columns: repeat(2, 1fr); }
+      .contact .wp-wrap .vc-empty-box-1 {
+        grid-area: vc-empty-box-1; }
+      .contact .wp-wrap .contact-us-content {
+        grid-area: contact-us-content; }
+        .contact .wp-wrap .contact-us-content-wrapper {
+          padding-left: 0 !important; }
+      .contact .wp-wrap .vc-empty-box-2 {
+        grid-area: vc-empty-box-2; }
+    .contact .contact-title {
+      position: relative;
+      width: 350px; }
+      .contact .contact-title .contact-item-subtitle {
+        color: #057023;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        text-align: left; }
+      .contact .contact-title .contact-item-title {
+        line-height: 0.92;
+        font-weight: 300; }
+    .contact-margin {
+      color: #057023;
+      padding-right: 1em;
+      min-width: 89px;
+      box-sizing: border-box;
+      display: inline-block; }
+    .contact a {
+      text-decoration: none;
+      color: #057023; }
+      .contact a:hover {
+        color: #068d2c; } }
 
 @media screen and (max-width: 768px) {
   .jumbotron {
@@ -361,10 +409,88 @@ iframe, video, embed {
   .sr-container {
     position: relative;
     display: grid;
-    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
+    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
     grid-template-columns: 1fr;
     padding: 0;
-    margin: 0; } }
+    margin: 0; }
+  .about {
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    background: #f2f2f2; }
+    .about-container {
+      display: block;
+      align-items: center;
+      justify-content: center; }
+      .about-container > div {
+        margin: 1rem auto;
+        height: 100%;
+        width: 100%; }
+    .about-bg {
+      width: 100%;
+      margin: auto; }
+      .about-bg img {
+        margin: auto;
+        width: 100%; }
+    .about-content {
+      text-align: center;
+      margin: 0; }
+      .about-content p {
+        font-size: 1rem; }
+      .about-content h3.sm-heading {
+        text-transform: uppercase;
+        font-weight: 900;
+        color: #057023;
+        background: none;
+        display: inline-block;
+        padding: 0.2rem; }
+  .contact {
+    display: grid;
+    grid-template-areas: 'contact-us'  'contact-map';
+    grid-template-columns: 1fr; }
+    .contact .contact-us,
+    .contact .contact-map {
+      margin: .9rem; }
+    .contact .contact-us {
+      grid-area: contact-us;
+      width: 100%;
+      margin-left: 4rem; }
+    .contact .contact-map {
+      grid-area: contact-map;
+      width: 100%; }
+    .contact .wp-wrap {
+      display: grid;
+      grid-template-areas: 'contact-us-content contact-us-content';
+      grid-template-columns: repeat(2, 1fr); }
+      .contact .wp-wrap .vc-empty-box-1 {
+        grid-area: vc-empty-box-1; }
+      .contact .wp-wrap .contact-us-content {
+        grid-area: contact-us-content; }
+        .contact .wp-wrap .contact-us-content-wrapper {
+          padding-left: 0 !important; }
+      .contact .wp-wrap .vc-empty-box-2 {
+        grid-area: vc-empty-box-2; }
+    .contact .contact-title {
+      position: relative;
+      width: 350px; }
+      .contact .contact-title .contact-item-subtitle {
+        color: #057023;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        text-align: left; }
+      .contact .contact-title .contact-item-title {
+        line-height: 0.92;
+        font-weight: 300; }
+    .contact-margin {
+      color: #057023;
+      padding-right: 1em;
+      min-width: 89px;
+      box-sizing: border-box;
+      display: inline-block; }
+    .contact a {
+      text-decoration: none;
+      color: #057023; }
+      .contact a:hover {
+        color: #068d2c; } }
 
 @media screen and (max-width: 576px) {
   .jumbotron {
