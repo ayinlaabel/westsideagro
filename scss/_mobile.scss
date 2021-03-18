@@ -60,6 +60,19 @@
 
     .sr {
 
+        &-content {
+            padding: 6.7em 3.4em 8em 3.4em;
+    
+            .sr-item-header {
+                padding-left: 11rem;
+    
+                .sr-item-title {
+                    position: relative;
+                    color: #fff;
+                }
+            }
+        }
+
         &-container {
             position: relative;
             display: grid;

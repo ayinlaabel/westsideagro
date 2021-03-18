@@ -331,6 +331,13 @@ iframe, video, embed {
       font-size: 3rem; }
     .jumbotron h3.sm-heading {
       font-size: 1.5rem; }
+  .sr-content {
+    padding: 6.7em 3.4em 8em 3.4em; }
+    .sr-content .sr-item-header {
+      padding-left: 11rem; }
+      .sr-content .sr-item-header .sr-item-title {
+        position: relative;
+        color: #fff; }
   .sr-container {
     position: relative;
     display: grid;
