@@ -116,6 +116,8 @@ header {
 
     &-01{
         grid-area: sr-01;
+        background: $primary-color;
+        width: 100%;
     }
 
     &-02{
