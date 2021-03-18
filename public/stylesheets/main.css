@@ -527,4 +527,28 @@ iframe, video, embed {
       font-size: 1rem; }
   .contact-title {
     position: relative;
-    width: 320px !important; } }
+    width: 320px !important; }
+  .sr-01, .sr-02 {
+    width: 290px; }
+  .sr-container {
+    position: relative;
+    display: grid;
+    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0; }
+  .sr-content {
+    padding: 6.7em 3.4em 8em 3.4em; }
+    .sr-content .sr-item-header {
+      padding-left: 11rem; }
+      .sr-content .sr-item-header .sr-item-title {
+        position: relative;
+        color: #fff; }
+    .sr-content .sr-item-content {
+      margin-top: 2.4em;
+      min-height: 9.5em;
+      color: #f2f2f2; }
+    .sr-content .sr-header {
+      position: absolute;
+      top: 20px;
+      transform: translate(20px); } }
