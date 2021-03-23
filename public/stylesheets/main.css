@@ -110,22 +110,15 @@ header {
 
 .jumbotron {
   position: relative;
-  background: linear-gradient(rgba(68, 68, 68, 0.7), rgba(68, 68, 68, 0.7)), url(/images/oil-palm-plantation.jpg);
-  background-attachment: fixed;
-  height: 100%;
-  width: 100%;
-  padding: 10rem;
   color: #fff;
   align-items: center;
-  margin: auto;
-  text-align: center; }
+  margin: auto; }
   .jumbotron-content {
     position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto; }
+    top: 20%;
+    right: 10px;
+    margin: auto;
+    padding: 1rem; }
   .jumbotron h1,
   .jumbotron h2,
   .jumbotron h3 {
@@ -305,6 +298,38 @@ iframe, video, embed {
   height: 100%; }
 
 @media screen and (min-width: 1200px) {
+  .jumbotron {
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    align-items: center;
+    margin: auto; }
+    .jumbotron-container {
+      background: #04581b;
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      right: 0; }
+    .jumbotron-content {
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      padding: 1rem; }
+    .jumbotron h1,
+    .jumbotron h2,
+    .jumbotron h3 {
+      font-weight: 300;
+      margin: auto; }
+      .jumbotron h1.lg-heading,
+      .jumbotron h2.lg-heading,
+      .jumbotron h3.lg-heading {
+        font-size: 6rem; }
+      .jumbotron h1.sm-heading,
+      .jumbotron h2.sm-heading,
+      .jumbotron h3.sm-heading {
+        font-size: 2rem;
+        font-weight: 600; }
   .sr-content {
     padding: 6.3em 2em 3.6em 4.8em; }
     .sr-content .sr-item-header {
@@ -330,12 +355,10 @@ iframe, video, embed {
   body {
     height: 100%;
     width: 100%; }
-  .jumbotron {
-    padding: 10rem 1rem !important; }
-    .jumbotron h1.lg-heading {
-      font-size: 3rem; }
-    .jumbotron h3.sm-heading {
-      font-size: 1.5rem; }
+  .jumbotron h1.lg-heading {
+    font-size: 3rem; }
+  .jumbotron h3.sm-heading {
+    font-size: 1.5rem; }
   .sr-content {
     padding: 6.7em 3.4em 8em 3.4em; }
     .sr-content .sr-item-header {
@@ -412,12 +435,10 @@ iframe, video, embed {
         color: #068d2c; } }
 
 @media screen and (max-width: 768px) {
-  .jumbotron {
-    padding: 10rem 1rem; }
-    .jumbotron h1.lg-heading {
-      font-size: 2rem; }
-    .jumbotron h3.sm-heading {
-      font-size: 1rem; }
+  .jumbotron h1.lg-heading {
+    font-size: 2rem; }
+  .jumbotron h3.sm-heading {
+    font-size: 1rem; }
   .sr-container {
     position: relative;
     display: grid;
