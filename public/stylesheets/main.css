@@ -670,7 +670,7 @@ iframe, video, embed {
       margin: auto;
       padding: 1rem; }
     .jumbotron .jumbotron-subcontent {
-      margin-top: 3rem;
+      margin-top: 2rem;
       padding: 1rem;
       border: none; }
       .jumbotron .jumbotron-subcontent p {
@@ -698,7 +698,7 @@ iframe, video, embed {
       .jumbotron h1.lg-heading,
       .jumbotron h2.lg-heading,
       .jumbotron h3.lg-heading {
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 400; }
       .jumbotron h1.sm-heading,
       .jumbotron h2.sm-heading,
