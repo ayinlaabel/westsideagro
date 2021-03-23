@@ -4,13 +4,15 @@
 @include mediaXl {
     .jumbotron {
         position: relative;
+        background: linear-gradient(rgba($background-color, $background-opacity), rgba($background-color, $background-opacity)), url(/images/bg-image.jpg);
+        background-attachment: fixed;
+        background-size: cover;
         height: 100vh;
         color: #fff;
         align-items: center;
         margin: auto;
 
         &-container{
-            background: darken($primary-color, 5);
             position: absolute;
             width: 50%;
             height: 100%;
@@ -24,6 +26,32 @@
             margin: auto;
             padding: 1rem;
         }
+        .jumbotron-subcontent {
+            border-left: 2px solid $secondary-color;
+            padding-left: 6rem;
+            margin-top: 6rem;
+            & p {
+                font-size: 1.2rem;
+            }
+
+            .jumbotron-btn {
+                font-size: .7rem;
+                font-weight: 700;
+                display: inline-block;
+                text-decoration: none;
+                text-transform: uppercase;
+                border: 2px solid $secondary-color;
+                padding: .5rem;
+                color: $secondary-color;
+                @include easeOut;
+
+                &:hover {
+                    border: 2px solid $primary-color;
+                    background: $primary-color;
+                    color: #fff;
+                }
+            }
+        }
     
         h1,
         h2,
@@ -32,7 +60,7 @@
             margin: auto;
     
             &.lg-heading{
-                font-size: 6rem;
+                font-size: 4rem;
             }
             &.sm-heading {
                 font-size: 2rem;
@@ -235,13 +263,76 @@
 // Medium devices (tablets, 768px and up)
 @include mediaMd {
     .jumbotron {
-        // padding: 10rem 1rem;
+        position: relative;
+        background: linear-gradient(rgba($background-color, $background-opacity), rgba($background-color, $background-opacity)), url(/images/bg-image.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+        color: #fff;
+        align-items: center;
+        margin: auto;
 
-        h1.lg-heading {
-            font-size: 2rem;
+        &-container{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0; 
+            margin-top: 8rem; 
         }
-        h3.sm-heading {
-            font-size: 1rem
+        
+        &-content {
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            padding: 1rem;
+            text-align: center;
+        }
+        .jumbotron-subcontent {
+            border-left: 2px solid $secondary-color;
+            padding-left: 6rem;
+            margin-top: 6rem;
+            text-align: center;
+
+            & p {
+                font-size: 1.2rem;
+                text-align: left;
+            }
+
+            .jumbotron-btn {
+                font-size: .7rem;
+                font-weight: 700;
+                display: inline-block;
+                text-decoration: none;
+                text-transform: uppercase;
+                text-align: center;
+                margin: auto;
+                border: 2px solid $secondary-color;
+                padding: .5rem;
+                color: $secondary-color;
+                @include easeOut;
+
+                &:hover {
+                    border: 2px solid $primary-color;
+                    background: $primary-color;
+                    color: #fff;
+                }
+            }
+        }
+    
+        h1,
+        h2,
+        h3 {
+            font-weight: 300;
+            margin: auto;
+    
+            &.lg-heading{
+                font-size: 4rem;
+            }
+            &.sm-heading {
+                font-size: 2rem;
+                font-weight: 600;
+            }
         }
     }
     .sr {
@@ -413,12 +504,73 @@
 // Small devices (landscape phones, 576px and up)
 @include mediaSm {
     .jumbotron {
-        padding: 10rem 0rem;
-        h1.lg-heading {
-            font-size: 2rem;
+        position: relative;
+        background: linear-gradient(rgba($background-color, $background-opacity), rgba($background-color, $background-opacity)), url(/images/bg-image.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+        color: #fff;
+        align-items: center;
+        margin: auto;
+
+        &-container{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0; 
+            margin-top: 5rem; 
         }
-        h3.sm-heading {
-            font-size: 1rem
+        
+        &-content {
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            padding: 1rem;
+        }
+        .jumbotron-subcontent {
+            margin-top: 3rem;
+            padding: 1rem;
+            border: none;
+
+            & p {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+
+            .jumbotron-btn {
+                font-size: .7rem;
+                font-weight: 700;
+                display: inline-block;
+                text-decoration: none;
+                text-transform: uppercase;
+                border: 2px solid $secondary-color;
+                padding: .5rem;
+                color: $secondary-color;
+                @include easeOut;
+
+                &:hover {
+                    border: 2px solid $primary-color;
+                    background: $primary-color;
+                    color: #fff;
+                }
+            }
+        }
+    
+        h1,
+        h2,
+        h3 {
+            font-weight: 300;
+            margin: auto;
+    
+            &.lg-heading{
+                font-size: 4rem;
+                font-weight: 400;
+            }
+            &.sm-heading {
+                font-size: 2rem;
+                font-weight: 600;
+            }
         }
     }
 
