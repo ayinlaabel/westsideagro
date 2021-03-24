@@ -88,9 +88,9 @@ header {
     }
 }
 .about {
-    margin: 0;
+    margin: 1rem 10rem 1rem 12rem;
     padding: 1rem;
-    background: #f2f2f2;
+    background: #fff;
 
     &-container{
         & > div {
@@ -114,13 +114,35 @@ header {
         flex-grow: 4;
 
         p {
-            font-size: 1.1rem;
+            font-size: 1rem;
+            color: $paragraph-color;
         }
 
-        h3.sm-heading {
-            background: $primary-color;
+        h6.xsm-heading {
+            position: relative;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
             display: inline-block;
             padding: 0.2rem;
+            color: $heading-color;
+            margin-bottom: 1.5rem;
+
+            &::after {
+                width: 20px;
+                height: 2px;
+                background: $secondary-color;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 30px;
+                left: 1px;
+                width: 30px;
+                height: 2px;
+                background: $secondary-color;
+            }
         }
     }    
 }
@@ -283,6 +305,76 @@ header {
         }
     }
 }
+
+.steps {
+    padding: 0;
+    margin: 0;
+
+    &-content {
+        margin: 7rem;
+
+        h1.lg-heading {
+            font-size: 3rem;
+            font-weight: 700;
+            color: $primary-color;
+            margin-bottom: 4rem;
+        }
+        .step-1 {
+            position: relative;
+            padding: 0;
+            margin: 0;
+
+            .step-img {
+                position: relative;
+                img {
+                    border-radius: 10px;
+                    width: 350px;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: -11px;
+                    left: 96px;
+                    width: 270px;
+                    height: 372px;
+                    background: $primary-color;
+                    z-index: -1;
+                    border-radius: 20px;
+
+                }
+
+                &::after {
+
+                }
+            }
+
+            &-content {
+                position: absolute;
+                top: 20%;
+                left: 35%;
+                margin-left: 2rem;
+
+                .sm-heading {
+                    font-weight: 400;
+                    color: #d6d5d5;
+                }
+
+                h2.md-heading {
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    color: $paragraph-color;
+                }
+            }
+            
+        }
+    }
+}
+
 .mytext-primary {
     color: $primary-color;
 }
