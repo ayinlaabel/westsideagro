@@ -422,6 +422,12 @@ iframe, video, embed {
     height: 100%;
 }
 
+.my-align {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
 
 
 @import 'mobile';

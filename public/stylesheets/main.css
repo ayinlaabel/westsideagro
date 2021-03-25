@@ -426,7 +426,12 @@ iframe, video, embed {
   width: 100%;
   height: 100%; }
 
-@media screen and (min-width: 1200px) {
+.my-align {
+  align-items: center;
+  justify-content: center;
+  margin: auto; }
+
+@media screen and (min-width: 1025px) {
   .jumbotron {
     position: relative;
     background: linear-gradient(rgba(68, 68, 68, 0.7), rgba(68, 68, 68, 0.7)), url(/images/bg-image.jpg);
@@ -502,7 +507,7 @@ iframe, video, embed {
   .contact-margin {
     min-width: 65px; } }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   body {
     height: 100%;
     width: 100%; }
@@ -782,12 +787,13 @@ iframe, video, embed {
           position: relative; }
           .steps-content .step-1 .step-img img {
             border-radius: 10px;
-            width: 300px; }
+            width: 300px;
+            margin: auto 207px; }
           .steps-content .step-1 .step-img:after {
             content: '';
             position: absolute;
             top: -11px;
-            left: 96px;
+            left: 301px;
             width: 220px;
             height: 322px;
             background: #057023;
