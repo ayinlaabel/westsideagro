@@ -895,11 +895,11 @@ iframe, video, embed {
         font-weight: 600; }
   .contact-title {
     position: relative;
-    width: 320px !important; }
+    width: 100% !important; }
   .contact .contact-us {
     padding: 0 1rem 1rem 1rem; }
   .sr-01, .sr-02 {
-    width: 360px;
+    width: 100% !important;
     text-align: center; }
   .sr-01 {
     width: 360px; }
