@@ -389,6 +389,28 @@ header {
           font-size: 1.2rem;
           color: #777777; }
 
+.why {
+  margin: 10px 120px 16px 120px;
+  width: 1200px;
+  display: grid;
+  grid-template-areas: 'why-image why-content-container';
+  grid-template-columns: 1fr 1fr; }
+  .why > div {
+    display: inline-block; }
+  .why-image {
+    grid-area: why-image;
+    width: 523px;
+    padding: 0;
+    margin: 0; }
+    .why-image img {
+      border-radius: 10px; }
+  .why-content-container {
+    grid-area: why-content-container;
+    margin-left: 77px;
+    width: 600px;
+    padding: 0;
+    margin: 0; }
+
 .mytext-primary {
   color: #057023; }
 
