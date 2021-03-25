@@ -761,7 +761,79 @@ iframe, video, embed {
       text-decoration: none;
       color: #057023; }
       .contact a:hover {
-        color: #068d2c; } }
+        color: #068d2c; }
+  .steps {
+    padding: 0;
+    margin: 0;
+    height: 100vh; }
+    .steps-content {
+      margin: 3rem; }
+      .steps-content h1.lg-heading {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #057023;
+        margin-bottom: 2rem;
+        text-align: center; }
+      .steps-content .step-1 {
+        position: relative;
+        padding: 0;
+        margin: 0; }
+        .steps-content .step-1 .step-img {
+          position: relative; }
+          .steps-content .step-1 .step-img img {
+            border-radius: 10px;
+            width: 300px; }
+          .steps-content .step-1 .step-img:after {
+            content: '';
+            position: absolute;
+            top: -11px;
+            left: 96px;
+            width: 220px;
+            height: 322px;
+            background: #057023;
+            z-index: -1;
+            border-radius: 20px; }
+        .steps-content .step-1-content {
+          position: relative;
+          top: 0;
+          left: 0;
+          margin: 2rem 1rem;
+          text-align: center;
+          line-height: 1.5; }
+          .steps-content .step-1-content .sm-heading {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #d6d5d5; }
+          .steps-content .step-1-content h2.md-heading {
+            font-size: 1.6rem;
+            font-weight: 600; }
+          .steps-content .step-1-content p {
+            font-size: .8rem;
+            color: #777777; }
+  .my-carousel-control-next {
+    position: absolute;
+    top: 435px;
+    right: 85px;
+    z-index: 1;
+    padding: 0;
+    color: #000;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease; }
+  .my-carousel-control-prev {
+    position: absolute;
+    top: 435px;
+    left: 85px;
+    z-index: 1;
+    padding: 0;
+    color: #000;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease; } }
 
 @media screen and (max-width: 480px) {
   .jumbotron {
@@ -827,7 +899,13 @@ iframe, video, embed {
   .contact .contact-us {
     padding: 0 1rem 1rem 1rem; }
   .sr-01, .sr-02 {
-    width: 290px; }
+    width: 400px; }
+  .sr-01 {
+    width: 460px; }
+  .sr-02 {
+    grid-area: sr-02;
+    background: #06882b;
+    width: 460px; }
   .sr-container {
     position: relative;
     display: grid;
@@ -849,4 +927,89 @@ iframe, video, embed {
     .sr-content .sr-header {
       position: absolute;
       top: 20px;
-      transform: translate(20px); } }
+      transform: translate(20px); }
+  .steps {
+    padding: 0;
+    margin: 0; }
+    .steps-content {
+      margin: 3rem; }
+      .steps-content h1.lg-heading {
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: #057023;
+        margin-bottom: 1.5rem;
+        text-align: center; }
+      .steps-content .step-1 {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center; }
+        .steps-content .step-1 .step-img {
+          position: relative;
+          margin: auto; }
+          .steps-content .step-1 .step-img img {
+            border-radius: 10px;
+            width: 250px;
+            margin-left: 40px; }
+          .steps-content .step-1 .step-img:after {
+            content: '';
+            position: absolute;
+            top: -11px;
+            left: 96px;
+            width: 170px;
+            height: 272px;
+            background: #057023;
+            z-index: -1;
+            border-radius: 20px;
+            margin-left: 40px; }
+        .steps-content .step-1-content {
+          position: relative;
+          top: 0;
+          left: 0;
+          margin: 2rem 1rem;
+          text-align: center;
+          line-height: 1.5; }
+          .steps-content .step-1-content .sm-heading {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #d6d5d5; }
+          .steps-content .step-1-content h2.md-heading {
+            font-size: 1.6rem;
+            font-weight: 600; }
+          .steps-content .step-1-content p {
+            font-size: .8rem;
+            color: #777777; }
+  .my-carousel-control-prev-icon,
+  .my-carousel-control-next-icon {
+    display: inline-block;
+    font-size: 3rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%; }
+  .my-carousel-control-next {
+    position: absolute;
+    top: 135px;
+    right: 5px;
+    z-index: 1;
+    padding: 0;
+    color: #000;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease; }
+  .my-carousel-control-prev {
+    position: absolute;
+    top: 135px;
+    left: 5px;
+    z-index: 1;
+    padding: 0;
+    color: #000;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease; } }

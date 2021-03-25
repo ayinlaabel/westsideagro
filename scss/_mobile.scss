@@ -522,6 +522,109 @@
             }
         }
     }
+
+    .steps {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+    
+        &-content {
+            margin: 3rem;
+    
+            h1.lg-heading {
+                font-size: 2rem;
+                font-weight: 700;
+                color: $primary-color;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+            .step-1 {
+                position: relative;
+                padding: 0;
+                margin: 0;
+    
+                .step-img {
+                    position: relative;
+                    img {
+                        border-radius: 10px;
+                        width: 300px;
+                    }
+    
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: -11px;
+                        left: 96px;
+                        width: 220px;
+                        height: 322px;
+                        background: $primary-color;
+                        z-index: -1;
+                        border-radius: 20px;
+    
+                    }
+    
+                    &::after {
+    
+                    }
+                }
+    
+                &-content {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    margin: 2rem 1rem;
+                    text-align: center;
+                    line-height: 1.5;
+    
+                    .sm-heading {
+                        font-size: 1.1rem;
+                        font-weight: 400;
+                        color: #d6d5d5;
+                    }
+    
+                    h2.md-heading {
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                    }
+    
+                    p {
+                        font-size: .8rem;
+                        color: $paragraph-color;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    
+    .my-carousel-control-next{
+        position: absolute;
+        top: 435px;
+        right: 85px;
+        z-index: 1;
+        padding: 0;
+        color: #000;
+        text-align: center;
+        background: 0 0;
+        border: 0;
+        opacity: .5;
+        transition: opacity .15s ease;
+    }
+    
+    .my-carousel-control-prev {
+        position: absolute;
+        top: 435px;
+        left: 85px;
+        z-index: 1;
+        padding: 0;
+        color: #000;
+        text-align: center;
+        background: 0 0;
+        border: 0;
+        opacity: .5;
+        transition: opacity .15s ease;
+    }        
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -609,7 +712,16 @@
 
         &-01,
         &-02{
-            width: 290px;
+            width: 400px;
+        }
+        &-01 {
+            width: 460px;
+        }
+
+        &-02{
+            grid-area: sr-02;
+            background: lighten($primary-color, 5);
+            width: 460px;
         }
 
         &-container {
@@ -649,4 +761,121 @@
             }
         }
     }
+
+    .steps {
+        padding: 0;
+        margin: 0;
+    
+        &-content {
+            margin: 3rem;
+    
+            h1.lg-heading {
+                font-size: 1.7rem;
+                font-weight: 700;
+                color: $primary-color;
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+            .step-1 {
+                position: relative;
+                padding: 0;
+                margin: 0;
+                align-items: center;
+                justify-content: center;
+    
+                .step-img {
+                    position: relative;
+                    margin: auto;
+                    
+                    img {
+                        border-radius: 10px;
+                        width: 250px;
+                        margin-left: 40px;
+                    }
+    
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: -11px;
+                        left: 96px;
+                        width: 170px;
+                        height: 272px;
+                        background: $primary-color;
+                        z-index: -1;
+                        border-radius: 20px;
+                        margin-left: 40px;
+    
+                    }
+    
+                    &::after {
+    
+                    }
+                }
+    
+                &-content {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    margin: 2rem 1rem;
+                    text-align: center;
+                    line-height: 1.5;
+    
+                    .sm-heading {
+                        font-size: 1.1rem;
+                        font-weight: 400;
+                        color: #d6d5d5;
+                    }
+    
+                    h2.md-heading {
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                    }
+    
+                    p {
+                        font-size: .8rem;
+                        color: $paragraph-color;
+                    }
+                }
+                
+            }
+        }
+    }
+    .my-carousel-control-prev-icon,
+    .my-carousel-control-next-icon {
+        display: inline-block;
+        font-size: 3rem;
+        width: 2rem;
+        height: 2rem;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
+    }
+
+    .my-carousel-control-next{
+        position: absolute;
+        top: 135px;
+        right: 5px;
+        z-index: 1;
+        padding: 0;
+        color: #000;
+        text-align: center;
+        background: 0 0;
+        border: 0;
+        opacity: .5;
+        transition: opacity .15s ease;
+    }
+    
+    .my-carousel-control-prev {
+        position: absolute;
+        top: 135px;
+        left: 5px;
+        z-index: 1;
+        padding: 0;
+        color: #000;
+        text-align: center;
+        background: 0 0;
+        border: 0;
+        opacity: .5;
+        transition: opacity .15s ease;
+    } 
 }
