@@ -401,8 +401,24 @@ header {
         grid-area: why-content-container;
         margin-left: 77px;
         width: 600px;
+        align-items: center;
+        justify-content: center;
         padding: 0;
-        margin: 0;
+        margin: auto;
+
+        h5.xsm-heading {
+            font-weight: 300;
+            color: $heading-color;
+        }
+
+        h2.md-heading {
+            font-size: 3rem;
+            color: $primary-color;
+        }
+
+        p {
+            color: $paragraph-color;
+        }
     }
 }
 

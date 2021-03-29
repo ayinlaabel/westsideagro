@@ -526,7 +526,7 @@
     .steps {
         padding: 0;
         margin: 0;
-        height: 100vh;
+        height: 100%;
     
         &-content {
             margin: 3rem;
@@ -625,7 +625,60 @@
         border: 0;
         opacity: .5;
         transition: opacity .15s ease;
-    }        
+    } 
+    
+    .why {
+        margin: 0;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        'why-image' 
+        'why-content-container';
+        grid-template-columns: 1fr;
+    
+        & > div {
+            display: inline-block;
+        }
+        
+        &-image {
+            grid-area: why-image;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            margin: auto;
+            img {
+                border-radius: 10px;
+                width: 50%;
+            }
+        }
+    
+        &-content-container {
+            grid-area: why-content-container;
+            text-align: center;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            padding-top: 2rem;
+    
+            h5.xsm-heading {
+                font-weight: 300;
+                color: $heading-color;
+            }
+    
+            h2.md-heading {
+                font-size: 3rem;
+                color: $primary-color;
+            }
+    
+            p {
+                color: $paragraph-color;
+                padding: 0 2rem;
+            }
+        }
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -921,4 +974,57 @@
         opacity: .5;
         transition: opacity .15s ease;
     } 
+
+    .why {
+        margin: 0;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        'why-image' 
+        'why-content-container';
+        grid-template-columns: 1fr;
+    
+        & > div {
+            display: inline-block;
+        }
+        
+        &-image {
+            grid-area: why-image;
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 2rem;
+            margin: auto;
+            img {
+                border-radius: 10px;
+                width: 50%;
+            }
+        }
+    
+        &-content-container {
+            grid-area: why-content-container;
+            text-align: center;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            padding-top: 2rem;
+    
+            h5.xsm-heading {
+                font-weight: 300;
+                color: $heading-color;
+            }
+    
+            h2.md-heading {
+                font-size: 2rem;
+                color: $primary-color;
+            }
+    
+            p {
+                color: $paragraph-color;
+                padding: 0 1rem;
+            }
+        }
+    }
 }
