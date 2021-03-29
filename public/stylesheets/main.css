@@ -890,7 +890,7 @@ iframe, video, embed {
       margin: auto; }
       .why-image img {
         border-radius: 10px;
-        width: 50%; }
+        width: 100%; }
     .why-content-container {
       grid-area: why-content-container;
       text-align: center;
