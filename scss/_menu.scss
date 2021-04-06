@@ -54,8 +54,6 @@
     &-nav{
         padding: 0;
         margin: 0;
-        align-items: center;
-        justify-content: center;
         list-style: none;
         text-align: center;
         @include easeOut;
@@ -64,14 +62,6 @@
         }
     }
 
-    .branding,
-    &-nav {
-        display: block;
-        align-items: center; 
-        justify-content: center;
-        width: 100% !important;
-        overflow: hidden;
-    }
 
     .branding {
         height: 30vh;
