@@ -153,6 +153,7 @@ header {
     height: 100%;
     top: 0;
     right: 0;
+    margin-right: 2rem;
     margin-top: 10rem; }
   .jumbotron-content {
     align-items: center;
@@ -414,6 +415,54 @@ header {
     .why-content-container p {
       color: #777777; }
 
+.footer {
+  background: #444;
+  display: grid;
+  grid-template-areas: 'nav-1 footer-branding nav-2';
+  grid-template-columns: repeat(3, 1fr);
+  height: 80vh;
+  padding-top: 10rem; }
+  .footer .footer-branding {
+    grid-area: footer-branding;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto; }
+    .footer .footer-branding img {
+      width: 300px;
+      height: 300px; }
+  .footer .footer-nav {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto; }
+    .footer .footer-nav .nav-bar {
+      display: inline-block; }
+    .footer .footer-nav .nav-1 {
+      grid-area: nav-1; }
+    .footer .footer-nav .nav-2 {
+      grid-area: nav-2; }
+    .footer .footer-nav .nav-bar,
+    .footer .footer-nav .nav-item,
+    .footer .footer-nav .nav-link {
+      list-style: none;
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      color: #fff; }
+    .footer .footer-nav .nav-item {
+      display: block;
+      font-size: .9rem;
+      margin-left: 1rem;
+      padding: 5px 1rem; }
+    .footer .footer-nav .nav-link {
+      display: inline-block;
+      transition: all .5s ease-out; }
+      .footer .footer-nav .nav-link:hover {
+        color: #eece1a; }
+
 .mytext-primary {
   color: #057023; }
 
@@ -534,6 +583,8 @@ iframe, video, embed {
   .menu {
     background: #444;
     position: fixed;
+    top: 0;
+    right: 0;
     width: 100%;
     height: 70px;
     visibility: visible; }
