@@ -109,6 +109,149 @@
             min-width: 65px;
         }
     }
+
+    .menu {
+        background: $background-color;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 70px;
+        visibility: visible;
+
+        &-btn {
+            visibility: hidden;
+        }
+
+        .branding,
+        &-nav {
+            display: inline-block;
+        }
+
+        .branding {
+            width: 20%;
+            margin: 10px 2rem;
+
+            .logo {
+                height: 50px;
+                width: 50px;
+            }
+        }
+
+        .nav-item {
+            display: inline-block;
+            margin: auto;
+            transform: translate3d(0, 0, 0);
+            margin-right: 1rem;
+        }
+        
+        .nav-link {
+            font-size: 0.8rem;
+        }
+
+        &-nav {
+            display: inline-block;
+            width: 70%;
+            visibility: visible;
+        }
+
+    }
+
+    .invest {
+        position: relative;
+        height: 60vh;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3rem;
+        
+        .invest-btn {
+            margin-top: 2rem;
+            width: 70%;
+    
+            a {
+                text-decoration: none;
+                width: 100%;
+                padding: .5rem 1.5rem;
+                background: $primary-color;
+                color: #fff;
+                border-radius: 5px;
+            }
+        }
+        
+        &-container {
+            position: relative;
+            background: linear-gradient(90deg,
+                                        rgba(darken(#fff, 5), .9) 60%, 
+                                        rgba($primary-color, .9) 40%), 
+                                        url(/images/logo.png);
+            background-size: cover;
+            margin-top: 10rem;
+            z-index: 1;
+            margin: auto;
+            width: 900px;
+            height: 450px;
+            box-shadow: -1px 0px 6px 1px;
+            align-items: center;
+            justify-content: center;
+    
+            .logo {
+                padding-top: 1rem;
+    
+                &-image{
+                    width: 50px;
+                    height: 50px;
+                    background: url(/images/logo.png);
+                    background-size: cover;
+                    margin: 1rem;
+                }
+            }
+    
+            .invest-image {
+                position: absolute;
+                top: 6%;
+                right: 50px;
+                width: 400px;
+                height: 400px;
+                background: url(/images/form-2.jpg);
+                background-size: cover ;
+    
+                img {
+                    width: 400px;
+                }
+            }
+        }
+    
+        .main-content {
+            width: 60%;
+            height: 60%;
+            margin: auto 2rem;
+            padding-top: 4rem;
+
+            &-image {
+                position: absolute;
+                top: 10%;
+                right: -40%;
+                visibility: hidden;
+                background: url(/images/palm-oil-red.png);
+                background-size: cover;
+                width: 300px;
+                height: 150px;
+            }
+    
+            .md-heading {
+                font-weight: 400;
+                font-size: 2.2rem;
+                color: $primary-color;
+                line-height: 1;
+    
+                &.heading-600{
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
 }
 
 // Large devices (desktops, 992px and up)
@@ -255,6 +398,91 @@
     
             &:hover {
                 color: lighten($primary-color, 6);
+            }
+        }
+    }
+
+    .invest {
+        position: relative;
+        height: 60vh;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3rem;
+        
+        .invest-btn {
+            margin-top: 2rem;
+            width: 70%;
+    
+            a {
+                text-decoration: none;
+                width: 100%;
+                padding: .5rem 1.5rem;
+                background: $primary-color;
+                color: #fff;
+                border-radius: 5px;
+            }
+        }
+        
+        &-container {
+            position: relative;
+            background: linear-gradient(90deg,
+                                        rgba(darken(#fff, 5), .9) 60%, 
+                                        rgba($primary-color, .9) 40%), 
+                                        url(/images/logo.png);
+            background-size: cover;
+            margin-top: 10rem;
+            z-index: 1;
+            margin: auto;
+            width: 900px;
+            height: 450px;
+            box-shadow: -1px 0px 6px 1px;
+            align-items: center;
+            justify-content: center;
+    
+            .logo {
+                padding-top: 1rem;
+    
+                &-image{
+                    width: 50px;
+                    height: 50px;
+                    background: url(/images/logo.png);
+                    background-size: cover;
+                    margin: 1rem;
+                }
+            }
+    
+            .invest-image {
+                position: absolute;
+                top: 6%;
+                right: 50px;
+                width: 400px;
+                height: 400px;
+                background: url(/images/form-2.jpg);
+                background-size: cover ;
+    
+                img {
+                    width: 400px;
+                }
+            }
+        }
+    
+        .main-content {
+            width: 60%;
+            height: 60%;
+            margin: auto 2rem;
+            padding-top: 4rem;
+    
+            .md-heading {
+                font-weight: 400;
+                font-size: 2.2rem;
+                color: $primary-color;
+                line-height: 1;
+    
+                &.heading-600{
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    text-transform: uppercase;
+                }
             }
         }
     }
@@ -679,6 +907,231 @@
             }
         }
     }
+
+    .invest {
+        position: relative;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+        
+        .invest-btn {
+            margin-top: 2rem;
+            width: 70%;
+    
+            a {
+                text-decoration: none;
+                width: 100%;
+                padding: .5rem 1.5rem;
+                background: $secondary-color;
+                color: $primary-color;
+                border-radius: 5px;
+            }
+        }
+        
+        &-container {
+            position: relative;
+            background: linear-gradient(180deg,
+                                        rgba(darken(#fff, 5), .9) 50%, 
+                                        rgba($primary-color, .9) 50%), 
+                                        url(/images/logo.png);
+            background-size: cover;
+            margin-top: 10rem;
+            z-index: 1;
+            margin: auto;
+            width: 100%;
+            height: 900px;
+            box-shadow: -1px 0px 6px 1px;
+            align-items: center;
+            justify-content: center;
+    
+            .logo {
+                position: absolute;
+                top: 52%;
+                padding-top: 1rem;
+    
+                &-image{
+                    width: 50px;
+                    height: 50px;
+                    background: url(/images/logo.png);
+                    background-size: cover;
+                    margin: 1rem;
+                }
+            }
+    
+            .invest-image {
+                position: absolute;
+                top: 2%;
+                left: 10%;
+                width: 600px;
+                height: 400px;
+                background: url(/images/form-2.jpg);
+                background-size: cover ;
+    
+                img {
+                    width: 400px;
+                }
+            }
+        }
+    
+        .main-content {
+            position: absolute;
+            top: 60%;
+            width: 60%;
+            height: 60%;
+            margin: auto 2rem;
+            padding-top: 4rem;
+
+            &-image {
+                position: absolute;
+                top: 10%;
+                right: -40%;
+                visibility: visible;
+                background: url(/images/palm-oil-red.png);
+                background-size: cover;
+                width: 300px;
+                height: 150px;
+            }
+    
+            .md-heading {
+                font-weight: 400;
+                font-size: 2.2rem;
+                color: #fff;
+                line-height: 1;
+    
+                &.heading-600{
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .footer {
+        background: #444;
+        display: grid;
+        grid-template-areas: 
+        'footer-branding footer-branding' 
+        'nav-1 footer-newsletter'
+        'copyright copyright';
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        padding-top: 3rem;
+    
+        .footer-branding {
+            display: inline-block;
+            grid-area: footer-branding;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 1rem;
+    
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    
+        .footer-newsletter {
+            grid-area: footer-newsletter;
+            margin-bottom: 1rem;
+    
+            .newsletter-container {
+                width: 100%;
+                .sm-heading {
+                    font-weight: 400;
+                    margin-bottom: 0;
+                    text-align: center;
+                    color: lighten(#444, 50);
+                    letter-spacing: 1px;
+                }
+                .md-heading {
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 1;
+                    text-align: center;
+                    color: rgba($secondary-color, .5);
+                }
+               
+                & .my-row {
+                    width: 100%;
+                    margin: 0 ;
+                    padding: 0;
+                }
+    
+                .my-col {
+                    display: inline-block;
+                    width: 44%;
+                    margin: .5rem;
+                }
+                .my-col-lg {
+                    width: 94%;
+                    margin: .5rem;
+                }
+    
+                .newsletter-btn {
+                    margin: .5rem;
+    
+                    button {
+                        border: none;
+                        width: 97%;
+                        height: 3rem;
+                        border-radius: 5px;
+                        background: $primary-color;
+                        color: #fff;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+    
+        .footer-nav {
+            margin-bottom: 1rem;
+            .nav-bar {
+                display: inline-block;
+    
+            }
+    
+            .nav-1 {
+                grid-area: nav-1;
+            }
+    
+            .nav-bar,
+            .nav-item,
+            .nav-link {
+                list-style: none;
+                text-decoration: none;
+                padding: 0;
+                margin: 0;
+                color: #fff;
+            }
+    
+            .nav-item {
+                display: block;
+                font-size: .9rem;
+                margin-left: 1rem;
+                padding: 5px 1rem;
+            }
+            
+            .nav-link {
+                display: inline-block;
+                @include easeOut;
+    
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+    
+        .copyright {
+            grid-area: copyright;
+            text-align: center;
+            color: lighten(#444, 30);
+        }
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -1026,5 +1479,116 @@
                 padding: 0 1rem;
             }
         }
+    }
+
+    .invest {
+        position: relative;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+        
+        .invest-btn {
+            margin-top: 2rem;
+            width: 70%;
+    
+            a {
+                text-decoration: none;
+                width: 100%;
+                padding: .5rem 1.5rem;
+                background: $secondary-color;
+                color: $primary-color;
+                border-radius: 5px;
+            }
+        }
+        
+        &-container {
+            position: relative;
+            background: linear-gradient(180deg,
+                                        rgba($primary-color, .9) 50%, 
+                                        rgba($primary-color, .9) 50%), 
+                                        url(/images/logo.png);
+            background-size: cover;
+            margin-top: 10rem;
+            z-index: 1;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            box-shadow: -1px 0px 6px 1px;
+            align-items: center;
+            justify-content: center;
+    
+            .logo {
+                position: relative;
+                top: 0;
+                padding-top: 1rem;
+    
+                &-image{
+                    width: 50px;
+                    height: 50px;
+                    background: url(/images/logo.png);
+                    background-size: cover;
+                    margin: 1rem;
+                }
+            }
+    
+            .invest-image {
+                position: relative;
+                top: 2%;
+                left: 10%;
+                width: 600px;
+                height: 400px;
+                background: url(/images/form-2.jpg);
+                background-size: cover ;
+                visibility: hidden;
+    
+                img {
+                    width: 400px;
+                }
+            }
+        }
+    
+        .main-content {
+            top:0;
+            width: 100%;
+            height: 100%;
+            margin: auto 2rem;
+            padding-top: 0;
+
+            &-image {
+                position: relative;
+                top: 0;
+                right: -40%;
+                visibility: hidden;
+                background: url(/images/palm-oil-red.png);
+                background-size: cover;
+                width: 300px;
+                height: 150px;
+            }
+    
+            .md-heading {
+                font-weight: 400;
+                font-size: 2.2rem;
+                color: #fff;
+                line-height: 1;
+    
+                &.heading-600{
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .footer {
+        background: #444;
+        display: grid;
+        grid-template-areas: 
+        'footer-branding' 
+        'footer-newsletter'
+        'nav-1'
+        'copyright';
+        grid-template-columns: 1fr;
     }
 }
