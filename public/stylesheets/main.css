@@ -1,7 +1,7 @@
 .menu-btn {
   position: absolute;
   top: 35px;
-  right: 35px;
+  left: 35px;
   z-index: 3;
   cursor: pointer;
   transition: all .5s ease-out; }
@@ -479,7 +479,7 @@ header {
 .footer {
   background: #444;
   display: grid;
-  grid-template-areas: 'nav-1 footer-branding footer-newsletter' 'copyright copyright copyright';
+  grid-template-areas: 'nav-1 footer-branding footer-newsletter' 'copyright copyright copyright';
   grid-template-columns: repeat(3, 1fr);
   height: 80vh;
   padding-top: 10rem; }
@@ -679,7 +679,7 @@ iframe, video, embed {
     background: #444;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     width: 100%;
     height: 70px;
     visibility: visible; }
@@ -758,7 +758,6 @@ iframe, video, embed {
       .invest .main-content-image {
         position: absolute;
         top: 10%;
-        right: -40%;
         visibility: hidden;
         background: url(/images/palm-oil-red.png);
         background-size: cover;
@@ -792,7 +791,7 @@ iframe, video, embed {
   .sr-container {
     position: relative;
     display: grid;
-    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
+    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
     grid-template-columns: 1fr;
     padding: 0;
     margin: 0; }
@@ -810,7 +809,7 @@ iframe, video, embed {
     margin: 0 10rem; }
   .contact {
     display: grid;
-    grid-template-areas: 'contact-us'  'contact-map';
+    grid-template-areas: 'contact-us'  'contact-map';
     grid-template-columns: 1fr; }
     .contact .contact-us,
     .contact .contact-map {
@@ -981,7 +980,7 @@ iframe, video, embed {
   .sr-container {
     position: relative;
     display: grid;
-    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
+    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
     grid-template-columns: 1fr;
     padding: 0;
     margin: 0; }
@@ -1046,7 +1045,7 @@ iframe, video, embed {
           background: #eece1a; }
   .contact {
     display: grid;
-    grid-template-areas: 'contact-us'  'contact-map';
+    grid-template-areas: 'contact-us'  'contact-map';
     grid-template-columns: 1fr; }
     .contact .contact-us,
     .contact .contact-map {
@@ -1171,7 +1170,7 @@ iframe, video, embed {
     margin: 0;
     width: 100%;
     display: grid;
-    grid-template-areas: 'why-image'  'why-content-container';
+    grid-template-areas: 'why-image'  'why-content-container';
     grid-template-columns: 1fr; }
     .why > div {
       display: inline-block; }
@@ -1279,7 +1278,7 @@ iframe, video, embed {
   .footer {
     background: #444;
     display: grid;
-    grid-template-areas: 'footer-branding footer-branding'  'nav-1 footer-newsletter' 'copyright copyright';
+    grid-template-areas: 'footer-branding footer-branding'  'nav-1 footer-newsletter' 'copyright copyright';
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
     padding-top: 3rem; }
@@ -1437,7 +1436,7 @@ iframe, video, embed {
   .sr-container {
     position: relative;
     display: grid;
-    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
+    grid-template-areas: 'sr-01' 'sr-02' 'sr-03';
     grid-template-columns: 1fr;
     padding: 0;
     margin: 0; }
@@ -1512,7 +1511,7 @@ iframe, video, embed {
           .steps-content .step-1 .step-img img {
             border-radius: 10px;
             width: 180px;
-            margin-left: 20px; }
+            margin-left: 10px; }
           .steps-content .step-1 .step-img:after {
             content: '';
             position: absolute;
@@ -1578,7 +1577,7 @@ iframe, video, embed {
     margin: 0;
     width: 100%;
     display: grid;
-    grid-template-areas: 'why-image'  'why-content-container';
+    grid-template-areas: 'why-image'  'why-content-container';
     grid-template-columns: 1fr; }
     .why > div {
       display: inline-block; }
@@ -1615,10 +1614,12 @@ iframe, video, embed {
     height: 100%;
     align-items: center;
     justify-content: center;
-    padding-top: 0; }
+    padding-top: 0;
+    margin: 0; }
     .invest .invest-btn {
+      text-align: center;
       margin-top: 2rem;
-      width: 70%; }
+      width: 100%; }
       .invest .invest-btn a {
         text-decoration: none;
         width: 100%;
@@ -1632,7 +1633,7 @@ iframe, video, embed {
       background-size: cover;
       margin-top: 10rem;
       z-index: 1;
-      margin: auto;
+      margin: 0;
       width: 100%;
       height: 100%;
       box-shadow: -1px 0px 6px 1px;
@@ -1651,28 +1652,28 @@ iframe, video, embed {
       .invest-container .invest-image {
         position: relative;
         top: 2%;
-        left: 10%;
-        width: 600px;
+        left: 0;
+        width: 0;
         height: 400px;
         background: url(/images/form-2.jpg);
         background-size: cover;
         visibility: hidden; }
         .invest-container .invest-image img {
-          width: 400px; }
+          width: 0px; }
     .invest .main-content {
       top: 0;
       width: 100%;
       height: 100%;
-      margin: auto 2rem;
-      padding-top: 0; }
+      margin: 0;
+      padding: 1rem;
+      text-align: center; }
       .invest .main-content-image {
         position: relative;
         top: 0;
-        right: -40%;
         visibility: hidden;
         background: url(/images/palm-oil-red.png);
         background-size: cover;
-        width: 300px;
+        width: 0px;
         height: 150px; }
       .invest .main-content .md-heading {
         font-weight: 400;
@@ -1686,5 +1687,5 @@ iframe, video, embed {
   .footer {
     background: #444;
     display: grid;
-    grid-template-areas: 'footer-branding'  'footer-newsletter' 'nav-1' 'copyright';
+    grid-template-areas: 'footer-branding'  'footer-newsletter' 'nav-1' 'copyright';
     grid-template-columns: 1fr; } }
