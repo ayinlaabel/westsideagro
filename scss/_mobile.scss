@@ -4,7 +4,10 @@
 @include mediaXl {
     .jumbotron {
         position: relative;
-        background: linear-gradient(rgba($background-color, $background-opacity), rgba($background-color, $background-opacity)), url(/images/bg-image.jpg);
+        background: linear-gradient(
+                                    rgba($background-color, $background-opacity), 
+                                    rgba($background-color, $background-opacity)), 
+                                    url(/images/bg-image.jpg);
         background-attachment: fixed;
         background-size: cover;
         height: 100vh;
@@ -114,7 +117,7 @@
         background: $background-color;
         position: fixed;
         top: 0;
-        right: 0;
+        left: 0;
         width: 100%;
         height: 70px;
         visibility: visible;
@@ -230,7 +233,7 @@
             &-image {
                 position: absolute;
                 top: 10%;
-                right: -40%;
+                // right: -40%;
                 visibility: hidden;
                 background: url(/images/palm-oil-red.png);
                 background-size: cover;
@@ -1339,7 +1342,7 @@
                     img {
                         border-radius: 10px;
                         width: 180px;
-                        margin-left: 20px;
+                        margin-left: 10px;
                     }
     
                     &:after {
@@ -1487,10 +1490,12 @@
         align-items: center;
         justify-content: center;
         padding-top: 0;
+        margin: 0;
         
         .invest-btn {
+            text-align: center;
             margin-top: 2rem;
-            width: 70%;
+            width: 100%;
     
             a {
                 text-decoration: none;
@@ -1511,7 +1516,7 @@
             background-size: cover;
             margin-top: 10rem;
             z-index: 1;
-            margin: auto;
+            margin: 0;
             width: 100%;
             height: 100%;
             box-shadow: -1px 0px 6px 1px;
@@ -1535,15 +1540,15 @@
             .invest-image {
                 position: relative;
                 top: 2%;
-                left: 10%;
-                width: 600px;
+                left: 0;
+                width: 0;
                 height: 400px;
                 background: url(/images/form-2.jpg);
                 background-size: cover ;
                 visibility: hidden;
     
                 img {
-                    width: 400px;
+                    width: 0px;
                 }
             }
         }
@@ -1552,17 +1557,18 @@
             top:0;
             width: 100%;
             height: 100%;
-            margin: auto 2rem;
-            padding-top: 0;
+            margin: 0;
+            padding: 1rem;
+            text-align: center;
 
             &-image {
                 position: relative;
                 top: 0;
-                right: -40%;
+                // right: -40%;
                 visibility: hidden;
                 background: url(/images/palm-oil-red.png);
                 background-size: cover;
-                width: 300px;
+                width: 0px;
                 height: 150px;
             }
     
