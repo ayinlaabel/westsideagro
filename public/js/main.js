@@ -32,3 +32,15 @@ function toggleMenu(){
         showMenu = false;
     }
 }
+
+window.onscroll = function () { 
+    "use strict";
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200  ) {
+        menu.classList.add("menu-bg");
+        menuBtn.classList.add("menu-btn-bg");
+    } 
+    else {
+        menu.classList.remove("menu-bg");
+        menuBtn.classList.remove("menu-btn-bg");
+    }
+};
