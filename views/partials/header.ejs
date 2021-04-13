@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Westside | <%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/main.css' />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/logo/favicon-16x16.png">
+    <link rel="manifest" href="/images/logo/site.webmanifest">
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+    <nav class="menu">
+      <div class="menu-container">
+        <div class="branding">
+          <a href="/">
+            <img src="/images/logo.png" class="logo" alt="Logo">
+            <p class="branding-title">West-Side</p>
+          </a>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item"><a href="/" class="nav-link <%= home %>">Home</a></li>
+          <li class="nav-item"><a href="/about-us" class="nav-link <%= about %>">About us</a></li>
+          <li class="nav-item"><a href="/contact-us" class="nav-link <%= contact %>">Contact us</a></li>
+          <!-- <li class="nav-item"><a href="" class="nav-link">More</a></li> -->
+        </ul>
+        <div class="nav-btn">
+          <a href="" class="nav-btn-r">Register</a></li>
+          <a href="" class="nav-btn-l">Login</a></li>
+        </div>
+      </div>
+    </nav>
+  </header>

@@ -343,9 +343,6 @@ header {
 
                 }
 
-                &::after {
-
-                }
             }
 
             &-content {
@@ -627,6 +624,130 @@ header {
         color: lighten(#444, 30);
     }
 }
+
+// Styling for About-us
+
+.hero {
+    background: linear-gradient(90deg, rgba($primary-color, .9) 0%, transparent), url(/images/cutting-hay.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10rem;
+
+    &-container {
+        width: 50%;
+    }
+
+    .md-heading {
+        font-size: 4rem;
+        font-weight: 300;
+        color: #fff;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+}
+
+.section-one {
+    padding: 10rem 5rem 5rem 5rem;
+    text-align: center;
+
+    h3 {
+        position: relative;
+        display: inline-block;
+
+        &.md-heading {
+            text-transform: uppercase;
+            text-align: center;
+            color: $primary-color;
+            margin-bottom: 3rem;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50px;
+            left: 70px;
+            width: 52px;
+            height: 2px;
+            background: $secondary-color;
+        }
+    }
+
+    p {
+        margin: auto;
+        width: 70%;
+    }
+}
+
+.section-two {
+    background: lighten(#eeeeee, 5);
+    padding: 5rem;
+    text-align: center;
+    
+    h3 {
+        position: relative;
+        display: inline-block;
+
+        &.md-heading {
+            text-transform: uppercase;
+            text-align: center;
+            color: $primary-color;
+            margin-bottom: 3rem;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50px;
+            left: 65px;
+            width: 52px;
+            height: 2px;
+            background: $secondary-color;
+        }
+    }
+
+    p {
+        margin: auto;
+        width: 70%;
+    }
+}
+
+.section-three {
+    padding: 5rem;
+    text-align: center;
+
+    h3 {
+        position: relative;
+        display: inline-block;
+
+        &.md-heading {
+            text-transform: uppercase;
+            text-align: center;
+            color: $primary-color;
+            margin-bottom: 3rem;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50px;
+            left: 58px;
+            width: 52px;
+            height: 2px;
+            background: $secondary-color;
+        }
+    }
+
+    p {
+        margin: auto;
+        width: 70%;
+    }
+}
+
+
+// Ending About-us
 
 .mytext-primary {
     color: $primary-color;
