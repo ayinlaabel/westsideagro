@@ -482,6 +482,94 @@ header {
     text-align: center;
     color: #919191; }
 
+.hero {
+  background: linear-gradient(90deg, rgba(5, 112, 35, 0.9) 0%, transparent), url(/images/cutting-hay.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 10rem; }
+  .hero-container {
+    width: 50%; }
+  .hero .md-heading {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 1.5rem; }
+  .hero p {
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #fff;
+    letter-spacing: 1px; }
+
+.section-one {
+  padding: 10rem 5rem 5rem 5rem;
+  text-align: center; }
+  .section-one h3 {
+    position: relative;
+    display: inline-block; }
+    .section-one h3.md-heading {
+      text-transform: uppercase;
+      text-align: center;
+      color: #057023;
+      margin-bottom: 3rem; }
+    .section-one h3::after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: 70px;
+      width: 52px;
+      height: 2px;
+      background: #eece1a; }
+  .section-one p {
+    margin: auto;
+    width: 70%; }
+
+.section-two {
+  background: #fbfbfb;
+  padding: 5rem;
+  text-align: center; }
+  .section-two h3 {
+    position: relative;
+    display: inline-block; }
+    .section-two h3.md-heading {
+      text-transform: uppercase;
+      text-align: center;
+      color: #057023;
+      margin-bottom: 3rem; }
+    .section-two h3::after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: 65px;
+      width: 52px;
+      height: 2px;
+      background: #eece1a; }
+  .section-two p {
+    margin: auto;
+    width: 70%; }
+
+.section-three {
+  padding: 5rem;
+  text-align: center; }
+  .section-three h3 {
+    position: relative;
+    display: inline-block; }
+    .section-three h3.md-heading {
+      text-transform: uppercase;
+      text-align: center;
+      color: #057023;
+      margin-bottom: 3rem; }
+    .section-three h3::after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: 58px;
+      width: 52px;
+      height: 2px;
+      background: #eece1a; }
+  .section-three p {
+    margin: auto;
+    width: 70%; }
+
 .mytext-primary {
   color: #057023; }
 
@@ -595,10 +683,12 @@ iframe, video, embed {
     -icon-number::after {
       top: 2.35rem;
       width: 2.829rem; }
-  .contact .contact-item-title {
-    font-size: 3.8rem; }
-  .contact-margin {
-    min-width: 65px; }
+  .contact {
+    padding-top: 10rem; }
+    .contact .contact-item-title {
+      font-size: 3.8rem; }
+    .contact-margin {
+      min-width: 65px; }
   .menu {
     position: fixed;
     top: 0;
