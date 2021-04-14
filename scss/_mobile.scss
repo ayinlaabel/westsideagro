@@ -1001,6 +1001,11 @@
             margin-bottom: 1rem;
         }
     }
+
+    //About Us
+    .hero-container {
+        width: 70%;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -1853,6 +1858,47 @@
         }
     }
 
+    //About-Us
+    .hero {
+        padding: 5rem;
+        text-align: center;
+
+        &-container {
+            width: 100%;
+        }
+    }
+
+    .section-one {
+        padding-top: 5rem;
+
+        h3 {
+
+            &::after {
+                left: 60px;
+            }
+        }
+    }
+
+    .section-two {
+          
+            h3 {
+    
+                &::after {
+                    left: 60px;
+                }
+            }
+    }
+
+    .section-three {
+          
+        h3 {
+
+            &::after {
+                left: 50px;
+            }
+        }
+}
+
     @for $x from 1 through 4 {
         .nav-item:nth-child(#{$x}){
             transition-delay: $x * 0.1s;
@@ -2379,5 +2425,66 @@
         'nav-1'
         'copyright';
         grid-template-columns: 1fr;
+    }
+
+    //About-Us
+    .hero {
+        padding: 3rem;
+        text-align: center;
+
+        &-container {
+            width: 100%;
+        }
+
+        .md-heading {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .section-one {
+        padding: 5rem 1rem 2rem 1rem;
+
+        h3 {
+
+            &::after {
+                left: 55px;
+            }
+        }
+
+        p {
+            width: 90%;
+        }
+    }
+    .section-two {
+        padding: 3rem 1rem 2rem 1rem;
+
+        h3 {
+
+            &::after {
+                left: 50px;
+            }
+        }
+
+        p {
+            width: 90%;
+        }
+    }
+    .section-three {
+        padding: 3rem 1rem 2rem 1rem;
+
+        h3 {
+
+            &::after {
+                left: 40px;
+            }
+        }
+
+        p {
+            width: 90%;
+        }
     }
 }
