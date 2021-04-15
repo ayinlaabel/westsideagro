@@ -249,8 +249,8 @@ header {
     .wp-wrap {
         display: grid;
         grid-template-areas: 
-        'vc-empty-box-1 contact-us-content contact-us-content';
-        grid-template-columns: repeat(3, 1fr);
+        'vc-empty-box-1 contact-us-content contact-us-content contact-us-content';
+        grid-template-columns: repeat(4, 1fr);
 
         .vc-empty-box-1{
             grid-area: vc-empty-box-1;
