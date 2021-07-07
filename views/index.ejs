@@ -1,28 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Westside Agro Investment || Coming Soon</title>
-  <link rel='stylesheet' href='/stylesheets/main.css' />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-</head>
-
-<body>
-  <div class="comingSoon">
-    <h1 class="lg-heading">Coming Soon</h1>
-    <h3 class="sm-heading">Westside Agro Investment will be online soon</h3>
-    <p> <i>please wait</i> 
-      <div class="spinner-border spinner-border-sm" role="status">
-        <span class="visually-hidden">Loading...</span>
+<%- include ./partials/header %>
+  <div class="jumbotron">
+    <div class="jumbotron-container">
+      <div class="jumbotron-content">
+        <h6 class="xsm-heading">Welcome to <span class="mytext-secondary">Westside Agro Investment</span></h6>
+        <!-- <h3 class="sm-heading">Looking for the best agricultural investment?</h3> -->
+        <h1 class="lg-heading">Lorem sit amet adipisicing elit.</h1>
+        <div class="jumbotron-subcontent">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi assumenda dolorum reprehenderit sint nostrum vitae, dolores velit sit hic quia.</p>
+          <a href="#!" class="jumbotron-btn">Learn more about us</a>
+        </div>
       </div>
-    </p>
+    </div>
   </div>
+  <section class="about">
+    <div class="about-container">
+      <div class="about-bg">
+        <img src="/images/banner-agro.jpeg" alt="">
+      </div>
+      <div class="about-content">
+        <h6 class="xsm-heading">About us</h6>
+        <p>An agro company focuses on palm oil production, investment and trading through flexible and unceasing process
+          thereby giving the investors and partners sustainable outstanding profits throughout the duration of their
+          investments and encourage youths to participate in palm oil production and value chain from product
+          processing, packaging, and distribution to the market.</p>
+        <div class="my-btn">
+          <a href="#!" class="my-btn my-btn-primary">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sr">
+    <div class="sr-container">
+      <div class="sr-01 sr-item">
+        <span class="sr-icon-number">01</span>
+        <div class="sr-content">
+          <div class="sr-item-header">
+            <h3 class="sm-heading sr-item-title">Our Vision</h3>
+          </div>
+          <div class="sr-item-content">
+            <p><em>Redefining agro trading and investment remains our focus, via building a robust investment platform
+                for investors and partners who are ready to participate in agricultural produce, especially palm oil
+                production and exploiting the high demand of the product in local and international market.</em></p>
+          </div>
+        </div>
+      </div>
+      <div class="sr-02 sr-item">
+        <div class="sr-02-responsive">
+          <span class="sr-icon-number">02</span>
+          <div class="sr-content">
+            <div class="sr-item-header">
+              <h3 class="sm-heading sr-item-title">Our Mission</h3>
+            </div>
+            <div class="sr-item-content">
+              <p><em>Building unbreakable strong network of visionary agro investors and partners in a consistent
+                  reliable platform, establishing sustainable food chain by bridging the gap of food scarcity across
+                  Nigeria and Africa.</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="sr-03 sr-item">
+        <span class="sr-icon-number">03</span>
+        <div class="sr-content">
+          <div class="sr-item-header">
+            <h3 class="sm-heading sr-item-title">You Register</h3>
+          </div>
+          <div class="sr-item-content">
+            <p><em>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, perspiciatis maxime quis
+                molestiae
+                cumque nemo neque expedita quas corporis maiores?</em></p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <section class="steps">
+    <div class="steps-content">
+      <h1 class="lg-heading">How it Works</h1>
+      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active p-3 my-align" >
+            <div class="step-1">
+              <div class="step-img">
+                <img src="/images/step-1.jpg" alt="SignUp Image">
+              </div>
+              <div class="step-1-content">
+                <h3 class="sm-heading">Step 1</h3>
+                <h2 class="md-heading">
+                  Sign up
+                </h2>
+                <p>
+                  Sign up to create a personal account.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item p-3">
+            <div class="step-1">
+              <div class="step-img">
+                <img src="/images/step-2.jpg" alt="SignUp Image">
+              </div>
+              <div class="step-1-content">
+                <h3 class="sm-heading">Step 2</h3>
+                <h2 class="md-heading">
+                  Fund Your Wallet
+                </h2>
+                <p>
+                  Fund your wallet with our secure payment methods.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item p-3">
+            <div class="step-1">
+              <div class="step-img">
+                <img src="/images/step-3.jpg" alt="SignUp Image">
+              </div>
+              <div class="step-1-content">
+                <h3 class="sm-heading">Step 3</h3>
+                <h2 class="md-heading">
+                  Select An Investment
+                </h2>
+                <p>
+                  Select an investment offer that matches your budget.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item p-3">
+            <div class="step-1">
+              <div class="step-img">
+                <img src="/images/step-4.jpg" alt="SignUp Image">
+              </div>
+              <div class="step-1-content">
+                <h3 class="sm-heading">Step 4</h3>
+                <h2 class="md-heading">
+                  Monitor Your Investments
+                </h2>
+                <p>
+                  Now that you're in, you can relax while we work to deliver excellent results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="my-carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="my-carousel-control-prev-icon" aria-hidden="true">&larr;</span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="my-carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="my-carousel-control-next-icon" aria-hidden="true">&rarr;</span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="why">
+    <div class="why-image">
+      <img src="/images/palm-oil.jpg" alt="">
+    </div>
+    <div class="why-content-container">
+      <h5 class="xsm-heading">Why Westside Agro</h5>
+      <h2 class="md-heading">Invest in Palm Oil</h2>
+      <p>Palm oil remains one of the highest in demand in both local and international markets. Estimated annual demand for palm oil grew by 5% between 2012 and 2016 versus annual growth of 1% – 2% of palm oil production within same period. The benefits embedded in palm oil industry is very huge which investors and partners can capitalize on with amazing Returns or profits.</p>
+      <div class="my-btn">
+        <a href="#!" class="my-btn-primary">Read more</a>
+      </div>
+    </div>
+  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-</body>
-</body>
-</html>
+  <section class="invest">
+    <div class="invest-container">
+      <div class="invest-content">
+        <div class="logo">
+          <div class="logo-image"></div>
+        </div>
+        <div class="main-content">
+          <div class="main-content-image"></div>
+          <div class="subcontent">
+            <h3 class="md-heading">Agro Opportunities.</h3>
+            <h3 class="md-heading">Better Investment.</h3>
+            <h3 class="md-heading heading-600">More Profits.</h3>
+          </div>
+          <div class="invest-btn">
+            <a href="#!" class="my-btn my-btn-primary">Register Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="invest-image">
+      </div>
+    </div>
+  </section>
+ <%- include ./partials/footer %>
